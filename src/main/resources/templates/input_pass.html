@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<div id="duplicateMessage" style="color: red;"
+	th:object="${passForm}"></div>
+パスワード:
+
+<input type="text" name="password" id="password" th:field="*{password}"><br>
+確認用パスワード:
+<input type="text" name="secondPassword" id="secondPassword" th:field="*{secondPassword}"><br>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script th:src="@{/check_pass.js}"></script>
+</body>
+</html>
